@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+main {
+    margin: 10px;
+}
+.button a{
+  width: 200px;
+  background-color: red;
+  position: fixed;
+  bottom: 0px;
+  right: 10px;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+}
+
+nav {
+    position: sticky;
+ position: -webkit-sticky;
+ top: 0;
+}
+
+nav > ul {
+ list-style: none;
+ 
+ padding: 0;
+ background-color: black;
+ overflow: hidden;
+ text-align: center;
+}
+
+nav > ul li a {
+  color: white;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  transition: .5s ease-in;
+}
+nav > ul > li:hover{
+    background-color:rgb(209, 151, 161);
+    
+}
+
+nav > ul >li:hover a {
+    color: black;
+    
+}
+.text {
+    background-color:  rgb(230, 167, 176);
+    animation-name: bgColor;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+   
+}
+
+.text > h1 {
+    padding-top: 10px;
+}
+.icon {
+    font-size: 15px;
+    padding-right: 5px;
+}
+span {
+    color: red;
+}
+@keyframes bgColor {
+    0% {
+        background-color:  rgb(230, 167, 176);
+    }
+    50%{
+        background-color: rgba(52, 223, 154, 0.699);
+  }
+  100% {
+    background-color: rgb(231, 147, 219);
+  }
+}
+
+.row {
+    background-color:rgb(238, 182, 190);
+    box-shadow: 0px 0px 5px rgba(216, 111, 198, 0.699);
+    padding: 20px;
+    border-radius: 10px;
+}
+.pro > div {
+ background-color: skyblue;
+ border: none;
+ outline: none;
+ width: 100px;
+ padding: 10px;
+ margin-right: 10px;
+ margin-bottom: 10px;
+ border-radius: 10px;
+ display: inline-block;
+ text-align: center;
+}
+.pro > div a {
+    text-decoration: none;
+    color: red;
+
+}
+.pro > div:hover {
+    box-shadow: 0px 0px 5px blue;;
+}
+.accordion {
+  background-color:rgba(74, 206, 162, 0.466);
+  padding: 10px;
+ text-align: center;
+ font-size: 25px;
+ font-weight: bold;
+}
+.panel {
+  width: 90%;
+  background-color:rgb(18, 143, 80);
+  color: white;
+  margin: 5px auto;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 25px;
+}
+.mode {
+ position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.9); 
+  display: none;
+}
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  #caption {
+      color: white;
+      text-align: center;
+      font-size: 25px;
+      margin-top: 10px;
+  }
+  footer {
+      background-color: rgb(84, 202, 84);
+      overflow: hidden;
+      padding: 50px;
+      color: white;
+  }
+  input, textarea, #send{
+      padding: 10px;
+      background-color: rgb(108, 219, 108);
+      border: 4px solid rgb(84, 202, 84);
+      border-radius: 10px;
+      outline: none;
+      
+  }
+  #send:hover {
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+  }
+  input:hover, input:focus , textarea:hover, textarea:focus{
+    outline: none;
+  } 
+  .message{
+      display: block;
+      margin-top: 20px;
+  }
+  .github {
+      width: 50px;
+  }
+@media screen and (min-width: 768px) {
+ nav > ul  {
+   text-align: center;
+  }
+  nav > ul > li {
+     display: inline-block;
+     padding: 20px;   
+}
+.pro {
+    text-align: center;
+    
+}
+.pro > div {
+    margin: 15px 0px;
+}
+.panel {
+    width: 70%;
+}
+form {
+    float: left;
+    width: 60%;
+}
+.right {
+  float: right;
+  width: 35%;
+}
+textarea {
+    width: 400px;
+}
+.row , .pro > button{
+    margin: 50px auto;
+    
+}
+}
